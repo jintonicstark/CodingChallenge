@@ -1,8 +1,23 @@
-# 변수 a에 10을 할당
-a = 10
+#시퀸스 원소의 최댓값 출력하기
 
-# 변수 a의 아이디 확인
-a_id = id(a)
+from typing import Any, Sequence
 
-# a_id를 가진 객체의 값 확인
-print(hex(a_id), ":", a)
+def max_of(a: Sequence) -> Any:
+    """시퀸스형 a 원소의 최댓값을 반환"""
+    maximum = a[0]
+    for i in range(1, len(a)):
+        if a[i] > maximum:
+            maximum = a[i]
+        
+    print(__name__)
+    return maximum
+
+if __name__ == '__main__':
+    print('배열의 최댓값을 구합니다.')
+    num = int(input('원소의 수를 입력하세요'))
+    x = [None] * num # 원소 수가 num인 리스트를 생성
+
+    for i in range(num):
+        x[i] = int(input(f'x[{i}]값을 입력하세요..:'))
+
+    print(f'최댓값은 {max_of(x)}')
