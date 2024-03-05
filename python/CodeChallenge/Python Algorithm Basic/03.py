@@ -8,7 +8,9 @@
 각각의 값은 1차원 리스트로 주어집니다.
 리스트 안에 더할 값이 없는 경우 0으로 출력해야 합니다. """
 
+
 def solution(data):
-    return sum(filter(lambda x: not(x %3 == 0 or x% 5==0, data)))
-    
+    return sum(filter(lambda x: not( x%3==0 or x %5==5),data))
+
+
 

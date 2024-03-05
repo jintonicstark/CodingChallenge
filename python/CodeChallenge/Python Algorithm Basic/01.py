@@ -18,5 +18,5 @@ print(list(filter(lambda x: x % 2,data)))
 print(solution(data))
 
 
-def solution(data):
+def solution1(data):
     return sum(filter(lambda x: x%2, data))
