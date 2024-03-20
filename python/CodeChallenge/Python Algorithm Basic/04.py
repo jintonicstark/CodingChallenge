@@ -14,12 +14,6 @@ def solution(data):
         sum += number*i
     return sum
 
-def solution1(data):
-    result  = 0
-    for i, s in enumerate(data):
-    	number  = int(s.split(" ")[1].replace('개', ''))
-        result += nmber * (i+1)
-    return result
 
     
 data = ['쿠키 3개', '쿠키 2개', '쿠키 5개']	
